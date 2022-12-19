@@ -34,28 +34,28 @@
       }
     </style>
   </head>
-  <body>
-    <section class="container">
-      <div class="red-box" id="box1"></div>
-      <div class="blue-box" id="box2"></div>
+  <body class="">
+    <section class="container ">
+      <div class="red-box" id="box1">
+        <div class="botao">
+          <button onclick="handleClick1()">Sumir vermelho</button>
+        </div>
+      </div>
+      <div class="blue-box hidden" id="box2">    <div class="botao">
+        <button onclick="handleClick1()">Sumir azul</button>
+      </div></div>
     </section>
-    <div class="botao">
-      <button onclick="handleClick1()">Sumir vermelho</button>
-    </div>
-    <div class="botao">
-      <button onclick="handleClick2()">Sumir azul</button>
-    </div>
     <script>
       function handleClick1() {
         let box1 = document.getElementById("box1");
-        box1.classList.toggle("hidden");
-
-      }
-      function handleClick2() {
         let box2 = document.getElementById("box2");
-        box2.classList.toggle("hidden");
-
+        box1.classList.toggle("hidden")
+        box2.classList.toggle("hidden")
       }
+      // function handleClick2() {
+      //   let box2 = document.getElementById("box2");
+      //   box2.classList.toggle("hidden");
+      // }
     </script>
   </body>
 </html>
